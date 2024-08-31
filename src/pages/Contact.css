@@ -1,0 +1,125 @@
+
+.container {
+    max-width: 500px; /* Limit the container width */
+    margin: 0 auto; /* Center the container */
+    padding: 40px;
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a lifted effect */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    text-align: center; /* Center text inside the container */
+}
+h1{
+    color: blueviolet;
+}
+
+h2{
+    color: purple;
+    padding-bottom: 50px;
+}
+
+label{
+    display: block; /* Make label a block element to take full width */
+    margin-bottom: 8px; /* Space between label and input */
+    font-size: 16px;
+    color:blueviolet; /* Dark gray color for labels */
+    font-weight: bold; /* Bold labels for emphasis */
+    
+}
+
+input{
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Inner padding for comfort */
+    margin-bottom: 20px; /* Space between input fields */
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 16px;
+    color: #333333;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+input:focus{
+    border-color: blueviolet; /* Change border color on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+.container button{
+    color: purple;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 10px 35px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid purple;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus{
+    background-color: blueviolet; /* Background color on hover */
+    color: white; /* Text color on hover */
+    border-color: blueviolet; /* Border color on hover */
+}
+
+.messageList {
+    margin-top: 20px; /* Space above the message list */
+    padding: 20px; /* Inner padding for the message list */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.messageList ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.messageList li {
+    padding: 10px; /* Space around each message */
+    background-color: #ffffff; /* White background for each message */
+    border: 1px solid #e0e0e0; /* Light border around each message */
+    border-radius: 4px; /* Rounded corners for messages */
+    margin-bottom: 10px; /* Space between messages */
+    font-size: 16px; /* Standard font size */
+    color: #333333; /* Text color */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.messageList li:hover {
+    background-color: #f0f0f0; /* Slightly darker background on hover */
+}
+
+
+.social-img ul{
+    list-style-type: none; /* Remove default bullets */
+}
+
+
+.social-img img{
+    padding-top: 30px;
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+/* .social-img img:hover{
+    transform: scale(1.2);
+} */
+
+.social-img img:hover {
+    animation: heartbeat 0.6s ease-in-out infinite; /* Apply the heartbeat animation */
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1); /* Start and end at the original size */
+    }
+    50% {
+        transform: scale(1.2); /* Enlarge to 120% at the middle of the animation */
+    }
+}
+

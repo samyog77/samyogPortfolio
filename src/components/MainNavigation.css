@@ -1,0 +1,46 @@
+nav {
+    
+    padding: 10px 50px; /* Padding around the navigation */
+  }
+  
+  nav ul {
+    list-style: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display list items in a row */
+    justify-content: center; /* Center the list items horizontally */
+  }
+  
+  nav ul li {
+    margin: 30px ; /* Space between each navigation item */
+   
+  }
+  
+  nav ul li a {
+    color: blueviolet; /* Wbluehite text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    font-size: 18px; /* Adjust font size */
+    padding: 8px 16px; /* Padding around the text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: blueviolet; /* White background on hover */
+    color: white; /* Green text on hover */
+    border-radius: 4px; /* Rounded corners */
+  }
+
+  .menu-icon {
+    color: purple; /* Initial color */
+    font-size: 24px; /* Adjust the size of the icon */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    /* Add padding to match the links */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+}
+.menu-icon:hover {
+    background-color: blueviolet; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
