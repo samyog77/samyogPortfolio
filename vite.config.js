@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/samyogPortfolio/', // Set this to your GitHub Pages repository name
   plugins: [react()],
+ 
 })
